@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Todo</title>
+
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="input">
+      <button type="button" @click="addTodo">tuika</button>
+      <ul>
+        <li v-for="todo in todos"><p>{{todo.todo}}</p></li>
+      </ul>
+      {{a}}
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.10/vue.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src="./bundle.js"></script>
+    <script src="./superagent/node_modules/superagent/superagent.js">
+
+    </script>
+  </body>
+</html>
